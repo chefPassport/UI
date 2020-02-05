@@ -10,3 +10,11 @@ nav a {
   color: gray;
   font-size: 20px;
 }
+.navigation {
+  display: flex;
+  align-items: flex-end;
+}
+.purpose {
+  background-image: url("img\undraw_Chef_cu0r 1.jpg");
+  background-repeat: no-repeat;
+}
