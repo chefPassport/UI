@@ -52,16 +52,44 @@ nav a {
 
   .buttons{
       margin-top: 20%;
+
+      a{
+          text-decoration: none;
+      }
+
+      .swap {
+        background: var(--bg-color);
+        color: var(--fg-color);
+       box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+     }
+ 
+     .swap:hover, .swap:focus {
+        background: var(--fg-color);
+        color: var(--bg-color);
+       box-shadow: 0 0 8px 2px var(--fg-color);
+     }
+ 
   }
 
+//   .three {
+//     --bg-color: rgb(58, 58, 57);
+//     --fg-color: rgb(245, 240, 240);
+//   }
+
   .sign-up{
+    --bg-color: @red;
+    --fg-color: #42403D;
+      margin-top: 20%;
       background: @red;
       border-radius: 12px;
       width: 25%;
       padding: 14px 40px;
       font-size: 18px;
+      color: black;
   }
 .learn-more{
+    --bg-color: #42403D;
+    --fg-color: @paleturquoise;
    background: @gainsboro;
    color: @red;
    margin-left: 100px;

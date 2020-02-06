@@ -43,14 +43,34 @@ nav a {
 .buttons {
   margin-top: 20%;
 }
+.buttons a {
+  text-decoration: none;
+}
+.buttons .swap {
+  background: var(--bg-color);
+  color: var(--fg-color);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.buttons .swap:hover,
+.buttons .swap:focus {
+  background: var(--fg-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 8px 2px var(--fg-color);
+}
 .sign-up {
+  --bg-color: #D81E05;
+  --fg-color: #42403D;
+  margin-top: 20%;
   background: #D81E05;
   border-radius: 12px;
   width: 25%;
   padding: 14px 40px;
   font-size: 18px;
+  color: black;
 }
 .learn-more {
+  --bg-color: #42403D;
+  --fg-color: #AFEEEE;
   background: #DCDCDC;
   color: #D81E05;
   margin-left: 100px;
