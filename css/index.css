@@ -10,7 +10,6 @@
 .logo {
   margin-top: 15px;
   margin-left: 10px;
-  width: 100%;
 }
 @media (max-width: 500px) {
   .logo img {
@@ -22,9 +21,6 @@
   .logo img {
     margin-left: 15px;
   }
-}
-img {
-  width: 100%;
 }
 nav a {
   text-decoration: none;
