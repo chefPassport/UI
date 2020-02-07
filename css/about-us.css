@@ -1,3 +1,6 @@
+body {
+  background: #696969;
+}
 .top-class {
   display: flex;
 }
@@ -7,7 +10,7 @@
 }
 nav a {
   text-decoration: none;
-  color: gray;
+  color: white;
   font-size: 20px;
   margin-right: 6px;
   margin-left: 15px;
@@ -18,13 +21,36 @@ nav a {
   padding: 20px;
   padding-left: 5px;
 }
-h1 {
+@media (max-width: 800px) {
+  .navigation {
+    display: flex;
+    margin: 2px 0px 0px 200px;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  .navigation {
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  .navigation nav {
+    display: flex;
+    margin-top: 30px;
+  }
+}
+#banner h1 {
   display: flex;
   align-items: center;
   font-size: 60px;
   margin: auto;
   margin-left: 35%;
   padding-top: 200px;
+}
+@media (max-width: 800px) {
+  #banner h1 {
+    margin: 0;
+  }
 }
 .boxes {
   display: flex;
@@ -52,4 +78,10 @@ h1 {
   border-radius: 6px;
   width: 230px;
   height: 284px;
+}
+.box1 h2 {
+  margin-top: 40%;
+}
+.img {
+  width: 2%;
 }
