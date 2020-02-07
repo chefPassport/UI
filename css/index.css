@@ -10,6 +10,21 @@
 .logo {
   margin-top: 15px;
   margin-left: 10px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 800px) {
+  .logo img {
+    margin-left: 15px;
+  }
+}
+img {
+  width: 100%;
 }
 nav a {
   text-decoration: none;
@@ -18,20 +33,43 @@ nav a {
   margin-right: 6px;
   margin-left: 15px;
 }
+@media (max-width: 800px) {
+  nav a {
+    text-align: center;
+  }
+}
 .navigation {
   margin-top: 5px;
   margin-left: 60%;
   padding: 20px;
   padding-left: 5px;
 }
+@media (max-width: 800px) {
+  .navigation nav {
+    display: flex;
+  }
+}
 .purpose h1 {
   font-size: 48px;
   color: #42403D;
   margin-top: 50px;
 }
+@media (max-width: 800px) {
+  .purpose h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+}
 .purpose p {
   font-size: 20px;
   margin-top: 35px;
+}
+@media (max-width: 800px) {
+  .purpose p {
+    font-size: 16px;
+    text-align: center;
+    margin-right: 7%;
+  }
 }
 .chef-logo img {
   width: 100%;
@@ -42,6 +80,13 @@ nav a {
 }
 .buttons {
   margin-top: 20%;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .buttons a {
   text-decoration: none;
@@ -63,18 +108,40 @@ nav a {
   margin-top: 20%;
   background: #D81E05;
   border-radius: 12px;
-  width: 25%;
+  width: 50%;
   padding: 14px 40px;
   font-size: 18px;
   color: black;
+}
+@media (max-width: 800px) {
+  .sign-up {
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up {
+    padding: 1px 30px;
+  }
 }
 .learn-more {
   --bg-color: #42403D;
   --fg-color: #AFEEEE;
   background: #DCDCDC;
   color: #D81E05;
-  margin-left: 100px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 50%;
   font-size: 18px;
   border-radius: 12px;
   padding: 14px 40px;
+}
+@media (max-width: 800px) {
+  .learn-more {
+    padding: 5px 30px;
+  }
+}
+@media (max-width: 500px) {
+  .learn-more {
+    padding: 1px 30px;
+  }
 }

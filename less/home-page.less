@@ -6,6 +6,24 @@
 .logo{
     margin-top: 15px;
     margin-left: 10px;
+    width: 100%;
+
+    img{
+      @media(max-width:500px){
+        width:100%;
+        height: auto;
+      }
+
+      @media(max-width:800px){
+       margin-left: 15px;
+      }
+    }
+
+   
+}
+
+img{
+  width: 100%;
 }
 
 nav a {
@@ -14,6 +32,10 @@ nav a {
     font-size: 20px;
     margin-right: 6px;
     margin-left: 15px;
+
+    @media(max-width:800px){
+      text-align: center;
+    }
   }
 
   .navigation{
@@ -23,17 +45,35 @@ nav a {
      padding-left: 5px;
   }
 
-  .purpose{
+  .navigation nav{
 
+    @media(max-width:800px){
+      display: flex;
+    }
+  }
+
+  .purpose{
+      
     h1{
         font-size: 48px;
         color: #42403D;
         margin-top: 50px;
+
+        @media(max-width:800px){
+          font-size: 35px;
+          text-align: center;
+        }
     }
 
     p{
         font-size: 20px;
         margin-top: 35px;
+        @media(max-width:800px){
+          font-size: 16px;
+          text-align: center;
+          margin-right: 7%;
+          
+        }
     }
   } 
 
@@ -52,6 +92,11 @@ nav a {
 
   .buttons{
       margin-top: 20%;
+      align-items: center;
+      @media(max-width:800px){
+        display: flex;
+        flex-direction: column;
+      }
 
       a{
           text-decoration: none;
@@ -71,10 +116,6 @@ nav a {
  
   }
 
-//   .three {
-//     --bg-color: rgb(58, 58, 57);
-//     --fg-color: rgb(245, 240, 240);
-//   }
 
   .sign-up{
     --bg-color: @red;
@@ -82,23 +123,42 @@ nav a {
       margin-top: 20%;
       background: @red;
       border-radius: 12px;
-      width: 25%;
+      width: 50%;
       padding: 14px 40px;
       font-size: 18px;
       color: black;
+
+      @media(max-width: 800px){
+        padding: 5px 30px;
+      }
+
+      @media(max-width: 500px){
+        padding: 1px 30px;
+      }
+
+     
   }
 .learn-more{
     --bg-color: #42403D;
     --fg-color: @paleturquoise;
    background: @gainsboro;
    color: @red;
-   margin-left: 100px;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   width: 50%;
    font-size: 18px;
    border-radius: 12px;
    padding: 14px 40px;
-}
-  
 
+   @media(max-width:800px){
+     padding: 5px 30px;
+   }
+   @media(max-width: 500px){
+    padding: 1px 30px;
+   }
+
+  
+}
 
 
 
